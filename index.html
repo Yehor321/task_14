@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let favoriteGames = ["The Witcher 3", "Mass Effect", "Skyrim", "Dark Souls", "Red Dead Redemption"];
+        console.log("Елементи масиву favoriteGames:");
+        console.log(favoriteGames);
+
+        let randomNumbers = [];
+        for (let i = 0; i < 20; i++) {
+            randomNumbers.push(Math.floor(Math.random() * 100));
+        }
+
+        console.log("\nЕлементи масиву randomNumbers:");
+        console.log(randomNumbers);
+
+
+        let maxNumber = Math.max(...randomNumbers);
+        console.log("\nМаксимальне значення в масиві randomNumbers:", maxNumber);
+
+        let minNumber = Math.min(...randomNumbers);
+        console.log("Мінімальне значення в масиві randomNumbers:", minNumber);
+
+        let sum = randomNumbers.reduce((acc, num) => acc + num, 0);
+        let average = sum / randomNumbers.length;
+        console.log("Середнє значення в масиві randomNumbers:", average);
+
+    </script>
+</body>
+</html>
